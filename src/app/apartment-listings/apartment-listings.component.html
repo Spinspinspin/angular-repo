@@ -1,0 +1,8 @@
+<marquee behavior="alternate" direction="down" width=300 height=100 scrollamount="7"><h1>Apartments!</h1></marquee>
+
+ <div *ngFor="let apartment of apartments">
+   <a (click)="selectApartment(apartment)">{{ apartment.address }}</a>
+ </div>
+<button *ngIf="selectedApartment" (click)="hideApartment(apartment)">Hide Apartment</button>
+<app-apartment-detail *ngIf="selectedApartment" [apartment]="selectedApartment"></app-apartment-detail>
+
