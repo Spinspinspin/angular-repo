@@ -15,9 +15,9 @@ import { SessionDataService } from './session-data/session-data.service';
 import { MyListingsComponent } from './my-listings/my-listings.component';
 
 const routes: Route[] = [
-  { path: 'login', component: LoginComponent },
-  { path: '',      component: ApartmentListingsComponent },
-  { path: 'apartments/mine', component: MyListingsComponent }
+  { path: 'login',              component: LoginComponent },
+  { path: '',                   component: ApartmentListingsComponent },
+  { path: 'apartments/mine',    component: MyListingsComponent }
 
 ];
 

@@ -1,3 +1,19 @@
+
+
+  <form (submit)="deactivateListing()">
+    <button>Deactivate listing</button>
+    </form>
+
+  <form (submit)="activateListing()">
+    <button>Activate listing</button>
+    </form>
+
+  <form (submit)="likeListing()">
+     <button>Like this apartment</button>
+    </form>
+
+  <a href="/login?returnPath=/apartments/{{ apartment.id }}">Login to LIKE this apartment</a>
+
 <h1>Rent: ${{ apartment.rent }}</h1><br><br>
 <div>
 {{ apartment.address }}<br>
