@@ -21,7 +21,7 @@ export class ApartmentListingsComponent implements OnInit {
     this.selectedApartment = apartment;
   }
 
-  hideApartment(apartment: Apartment){
+  hideApartment(){
     this.selectedApartment = null;
     
   }
